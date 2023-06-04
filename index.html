@@ -3,12 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JapanCars-Homepage</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>JapanCars-Homepage</title>
+    <link rel="stylesheet" href="css/style.css">¨
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <script src="js/hamburger.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper(".swiper", {
+          loop:true,
+          autoplay:true,
+          effect:"fade", /*fade/clip/flip/cube*/
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar', /*bullets - budou puntíky*/
+            clickable:true,
+          }, 
+        });
+  
+        document.querySelector("#next-slide").onclick = () => swiper.slideNext();
+      </script>
 </head>
 <body>
-    <h1>My Web Page</h1>    
+    <section class="zkouska">
+        <header>
+            <nav>
+                <div class="hamburger-row">
+                    <a class="navbar-logo" href="index.html"><img src="img/img_logo.svg" alt=""></a>
+                    <a href="javasript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <nav class="hamburger-nav hamburger-zone">
+                    <ul>
+                        <li class="menu-item">
+                            <a class="menu-item__xx" href=""><b>O NÁS</b></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item__xx" href=""><b>VOZY</b></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item__xx" href="#"><b>GALERIE</b></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item__xx" href=""><b>KONTAKT</b></a>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
+        </header>
+        <div><h3>Japonské legendy ve světě motorismu</h3></div>
+    </section>
+    <main>
+        <section class="section-onas">
+            <div class="onas--box">
+                <div class="section_heading">
+                    <h1>O NÁS</h1>
+                </div>
+                <div>
+                    <p>Vítejte na naší webové stránce věnované legendárním japonským automobilům! </p>
+                    <p>Prozkoumejte tuto sbírku zázračných vozidel, jejichž inovace a vášeň pro rychlost přesáhly hranice a staly se symbolem excelence v automobilovém světě. Představíme vám nejvýznamnější japonské vozy, které změnily průběh automobilového průmyslu a zanechaly nezapomenutelnou stopu ve srdcích motoristů po celém světě.</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/img_dash.webp" alt="">
+            </div>
+        </section>
+        <section class="section-vozy">
+            <div class="section_heading">
+                <h1>VOZY</h1>
+            </div>
+            <div class="vozy_item">
+                <div class="cars_name">
+                    <h2>Nissan Skyline GT-R V-Spec R34</h2>
+                </div>
+                <div class="cars_img">
+                    <img src="img/img_sky_0.webp" alt="">
+                </div>
+                <div class="cars-specs">
+                    <div>
+                        <div><p>Top speed</p></div>
+                        <div><p>250km/h</p></div>
+                    </div>
+                    <div>
+                        <div><p>Motorizace</p></div>
+                        <div><p>RB26DETT | 2.6 L | R6  | 276hp | 390Nm</p></div>
+                    </div>
+                    <div>
+                        <div><p>Převodovka</p></div>
+                        <div><p>6 st. manuální</p></div>
+                    </div>
+                    <div>
+                        <div><p>Pohon</p></div>
+                        <div><p>AWD</p></div>
+                    </div>
+                    <div>
+                        <div><p>Váha</p></div>
+                        <div><p>1560 Kg</p></div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="swiper">
+                        <div class="slider__content swiper-wrapper">
+                          <div class="slider__item swiper-slide">
+                            <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(img/img_sky_1.webp);">
+                            </div>
+                          </div>
+                          <div class="slider__item swiper-slide">
+                            <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(img/img_sky_2.webp);">
+                            </div>
+                          </div>
+                          <div class="slider__item swiper-slide">
+                            <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(img/img_sky_3.webp);">
+                            </div>
+                          </div>
+                          <div class="slider__item swiper-slide">
+                            <div class="slider-view slider-view__front" style="background-image: linear-gradient(to right bottom, rgb(43,43,43), rgba(43,43,43,0.5)), url(img/img_sky_4.webp);">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
