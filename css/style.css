@@ -11,6 +11,11 @@ img {
     width: -webkit-fill-available;
 }
 
+.header-description {
+    text-align: center;
+    font-size: 14px;
+}
+
 .zkouska {
     background-image: url(/img/img_back.webp);
     background-repeat: no-repeat;
@@ -22,9 +27,13 @@ img {
     margin: 34px;
 }
 
+.cars_name:first-child {
+    margin: 34px 15px;
+}
+
 .cars_name {
     text-align: center;
-    padding: 0px 15px 34px 15px;
+    margin: 54px 15px 34px 15px;
     font-size: 20px;
 }
 
@@ -32,7 +41,88 @@ img {
     padding: 30px 15px;
 }
 
-p {
+.onas-text {
     text-align: center;
-    margin: 1px;
+}
+
+.item-topspeed, .item-engine, .item-transmission, .item-AWD, .item-RWD, .item-weight {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #C03B32;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.item-topspeed::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/ico/ico_topspeed.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 31px;
+    height: 31px;
+    margin-right: 15px;
+}
+
+.item-specs--info {
+    color: #ffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.item-engine::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/ico/ico_engine.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 31px;
+    height: 31px;
+    margin-right: 15px;
+}
+
+.item-transmission::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/ico/ico_transmission.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 31px;
+    height: 31px;
+    margin-right: 15px;
+}
+
+.item-AWD::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/ico/ico_awd.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.item-RWD::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/ico/ico_rwd.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.item-weight::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/ico/ico_weight.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 31px;
+    height: 31px;
+    margin-right: 15px;
 }
