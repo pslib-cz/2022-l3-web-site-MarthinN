@@ -16,10 +16,11 @@ img {
     font-size: 14px;
 }
 
-.zkouska {
+.header-background {
     background-image: url(/img/img_back.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 16vh;
 }
 
 .section_heading {
@@ -125,4 +126,42 @@ img {
     width: 31px;
     height: 31px;
     margin-right: 15px;
+}
+
+.section-gallery__container a {
+    width: 150px;
+    height: 150px;
+}
+
+.fotka {
+    margin: 0px 20px;
+}
+
+.menu-item {
+    margin: 30px;
+    text-align: center;
+}
+
+.menu-item:first-child {
+    margin-top: 45vw;
+}
+
+.menu-item__xx {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.navbar-links {
+    position: absolute;
+    margin: 0;
+    right: 0px;
+    height: 100vh;
+    top: 0;
+    background-color: #000000C4;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
 }

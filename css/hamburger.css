@@ -24,7 +24,7 @@
 .hamburger span:nth-child(3) { bottom: 0px; background: white; }
 
 .hamburger-nav {
-    transform: translateY(-250%);
+    transform: translateY(-100%);
 }
 
 @media screen and (max-width: 639px) { 
@@ -35,6 +35,7 @@
     .hamburger-nav.active {
         transform: scaleY(1);
         transition: 1s;
+        position: fixed;
     }
 
     .hamburger-nav {
@@ -55,6 +56,7 @@
     .hamburger.active span:nth-child(2){
         transform: translateX(80px);
         transition: .5s;
+        display: none;
     }
 
     .hamburger span:nth-child(2){
@@ -65,6 +67,7 @@
         rotate: 135deg;
         bottom: 18px;
         transition: 1s;
+        background-color: #C03B32;
     }
 }
 
@@ -81,10 +84,7 @@
 .hamburger {
     display: block;
 }
-.hamburger-nav {
-    background-color: white;
-    padding-top: 10px;
-}
+
 .hamburger-nav ul {
     margin: 0;
     padding: 0;
@@ -96,13 +96,9 @@
 .hamburger-nav li:nth-child(even) {
     
 }
-.hamburger-nav li a:hover {
-    background-color: #F5841F;
-    color: white;
-    border: solid;
-    border-radius: 12px;
-    scale: 1.05;
-    transition: .2s;
+.hamburger-nav li:hover {
+    border-bottom: solid 1px #c92f24;
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 640px) {
