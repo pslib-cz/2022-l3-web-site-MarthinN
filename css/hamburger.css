@@ -93,6 +93,7 @@
     display: block;
     padding: 0.25em 1em;
 }
+
 .hamburger-nav li:nth-child(even) {
     
 }
@@ -102,8 +103,17 @@
 }
 
 @media screen and (min-width: 640px) {
-    .hamburger-row {
+    .hamburger {
         display: none;
+    }
+
+    .hamburger-nav li {
+        margin: 0 1.95rem;
+    }
+
+    .navbar-logo:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
     }
 
     .hamburger-nav {
@@ -113,10 +123,6 @@
     .hamburger-nav ul {
         display: flex;
         justify-content: right;
-    }
-
-    .menu-item__xx {
-        border: none;
-        color: black;
+        margin-top: 10vh;
     }
 }
